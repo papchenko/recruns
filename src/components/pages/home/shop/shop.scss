@@ -1,0 +1,48 @@
+.shop-container {
+    background-color: #ffffff0a;
+}
+.shop-card {
+    margin: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    .card-img-top-shop {
+        margin-top: 1rem;
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        border-radius: 1rem 1rem 0 0 !important;
+    }
+    .ri-shopping-cart-2-line {
+        color: var(--secondary-color) !important;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--text-color);
+    }
+    .shop-card-title {
+        font-size: 1.2rem;
+        color: var(--white-color);
+        margin-bottom: 0.25rem;
+    }
+    p {
+        color: var(--secondary-color);
+    }
+    .small {
+        color: var(--white-color);
+        font-size: 0.875rem;
+    }
+}
+.shop-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.shop-card-body {
+    margin-top: 3rem;
+}

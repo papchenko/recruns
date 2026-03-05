@@ -1,0 +1,65 @@
+.interactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin-block: 8px;
+  margin-inline: 20px;
+  border: 1px solid #e6e6e6;
+  background-color: #8d888616;
+  border-radius: 20px;
+
+  .share-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #017b6e;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .interactions {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+.popup-overlay-share {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content-share {
+  background: var(--dg-dark);
+  border-radius: 16px;
+  position: relative;
+  max-width: 400px;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 28px !important;
+  cursor: pointer;
+  color: #fff;
+}

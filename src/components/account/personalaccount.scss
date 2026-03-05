@@ -1,0 +1,138 @@
+.main-wrapper {
+    padding: 200px 60px 60px;
+    margin: 20px;
+}
+.personal__account-container {
+  background-color: #46494b44;
+  padding: 10px;
+  border-radius: 8px;
+}
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .personal__account-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .avatar-edit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      background: #357ab8;
+    }
+
+    input {
+      display: none;
+    }
+  }
+}
+
+.username-block {
+  margin-top: 15px;
+
+  .username-display {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span {
+      color: #fd5200;
+    }
+  }
+
+  .icon-edit {
+    cursor: pointer;
+    color: #4a90e2;
+    font-size: 16px;
+
+    &:hover {
+      color: #357ab8;
+    }
+  }
+
+  .username-edit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    input {
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-save {
+      background: #4a90e2;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #357ab8;
+      }
+    }
+
+    .icon-cancel {
+      cursor: pointer;
+      font-size: 20px;
+      color: #e74c3c;
+
+      &:hover {
+        color: #c0392b;
+      }
+    }
+  }
+}
+
+.upload-bar {
+  width: 120px;
+  background: #eee;
+  border-radius: 6px;
+  margin-top: 18px;
+  overflow: hidden;
+
+  .upload-progress {
+    height: 6px;
+    background: #27ae60;
+    transition: width 0.3s ease;
+  }
+}
+
+.info-text {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+.premium-features {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    i {
+      color: #fd5200;
+    }
+  }
+}

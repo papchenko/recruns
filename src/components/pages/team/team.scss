@@ -1,0 +1,28 @@
+.team__container {
+    padding-top: 5.5rem;
+}
+.testimonial-container {
+    background: linear-gradient(180deg, #1c212f 0%, #12151e 100%);
+}
+.tst-item {
+    background-color: var(--section-light);
+    padding: 1.5625rem;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-weight: 700;
+    .author-description {
+        font-size: 1.2rem !important;
+        font-weight: 500;
+    }
+}
+.tst-banner {
+    padding: 1.5625rem;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.author-wrapper {
+    max-width: 700px;
+    display: flex;
+    justify-self: center;
+}

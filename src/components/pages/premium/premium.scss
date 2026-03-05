@@ -1,0 +1,88 @@
+.price-section {
+    padding-top: 1rem;
+    background: linear-gradient(180deg, #1c212f 0%, #12151e 100%);
+}
+.pricing-card {
+    height: 520px;
+    background: linear-gradient(180deg, #12151e 0%, #12151e 100%);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: var(--transition-regular);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    h5 {
+        color: var(--white-color);
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    p {
+        color: var(--primary-pera);
+    }
+    .popular-tag {
+        background-color: var(--first-color);
+        border-radius: 4px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #071516;
+    }
+        ul {
+            li {
+            display: flex;
+            gap: 1px;
+            color: var(--white-color);
+            i {
+                background: rgba(74, 210, 137, 0.3);
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #41c76f;
+                margin-right: 10px;
+            }
+        }
+    }
+    .btn {
+        padding: 8px 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--white-color);
+        border-radius: 4px;
+        background-color: var(--primary-color);
+        width: 100%;
+        transition: var(--transition-regular);
+        cursor: pointer;
+        &:hover{
+            background-color: var(--section-light);
+            color: var(--white-color);
+        }
+    }
+}
+.pricing-content {
+    background: linear-gradient(90deg, #1c212f 0%, rgb(18, 21, 30) 100%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    h2 {
+        color: var(--white-color);
+    }
+    span {
+        color: var(--primary-pera);
+    }
+}
+.disabled-li {
+    color: #aaa;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.premium-features li {
+  color: #fff;
+  padding-bottom: 5px;
+}

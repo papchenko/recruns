@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --primary-color: #017b6e;
+    --first-color: #db3206;
+    --dg-dark: #212529;
+    --secondary-color: #fd5200;
+    --warning-color: #c1121f;
+    --soon-color: #70e000;
+    --section-bg: #12151e;
+    --desctiption-text: #ffffffbc;
+    --section-light: #222839;
+    --background-linear: linear-gradient(180deg, #efeedb 0%, rgba(239, 238, 219, 0) 100%);
+    --text-color: #071516;
+    --primary-pera: #8f94a3;
+    --white-color: #f4f5f6;
+    --border-color: rgba(248, 250, 252, 0.08);
+    --transition-regular: all 0.3s ease-in-out;
+    --transition-slow: all 0.6s ease-in-out;
+}
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+body {
+    background-color: var(--section-bg) !important;
+}
+/*    Custom Styles    */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 0.625rem;
+}
+.leaflet-control-attribution {
+  display: none !important;
+}
+.leaflet-control-zoom {
+  display: none !important;
+}
+.section {
+    padding-top: 7.5rem !important;
+    padding-bottom: 7.5rem !important;
+}
+.section-about {
+    padding-top: 6.5rem;
+    padding-bottom: 2.5rem;
+}
+.section-title {
+    p {
+        font-family: var(--KaushanScript-family);
+        font-size: 1.5rem;
+        margin: .625rem 0;
+        color: var(--first-color);
+    }
+    h2 {
+        font-size: 2.5rem;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+}
+.btn-custome {
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color) !important;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        background-color: transparent;
+    }
+}
+p {
+  color: #fff;
+}
+// modal
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  min-width: 300px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.tab-buttons button:hover {
+  background: #ddd;
+}
+.first-color {
+  color: #db3206;
+}
+.avatar {
+    border: 1px solid #ffffff;
+    padding: 2.2px;
+}

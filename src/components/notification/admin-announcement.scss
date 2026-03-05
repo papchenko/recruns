@@ -1,0 +1,41 @@
+.admin-announcement-panel {
+  background: rgba(30, 30, 40, 0.9);
+  padding-top: 200px !important;
+  border-radius: 16px;
+  color: #fff;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input,
+  textarea {
+    background: #1e1e2f;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: none;
+  }
+
+  button {
+    background: #017b6e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+
+    &:hover {
+      background: #009c88;
+    }
+  }
+}

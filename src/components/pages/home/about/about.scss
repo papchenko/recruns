@@ -1,0 +1,129 @@
+.about-section {
+  background-color: var(--section-bg);
+}
+
+.about {
+  h2 {
+    color: var(--white-color);
+  }
+
+  .about-learn-btn {
+    background-color: var(--section-light);
+    border: 1px solid transparent;
+    padding: .375rem 1.125rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    color: var(--white-color);
+    transition: var(--transition-regular);
+    cursor: pointer;
+    &:hover {
+      color: var(--white-color);
+      border: 1px solid var(--border-color);
+    }
+  }
+}
+
+.about-pera {
+  color: var(--primary-pera);
+  margin: 8px 0;
+}
+
+.about-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.popup-overlay-about {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 99999;
+  padding: 24px;
+  -webkit-overflow-scrolling: touch;
+  animation: fadeIn 180ms ease both;
+}
+
+.popup-content-about {
+  background: #ffffff;
+  color: #222;
+  width: 100%;
+  max-width: 720px;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(8px);
+  animation: popIn 220ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(166, 160, 160, 0.248);
+}
+
+.popup-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.popup-close {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px 8px;
+  color: #333;
+}
+
+.popup-body-about {
+  padding: 16px 20px;
+  overflow-y: auto;
+  line-height: 1.6;
+  color: #333;
+  flex: 1 1 auto;
+}
+
+.popup-body-about::-webkit-scrollbar {
+  width: 8px;
+}
+.popup-body-about::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 8px;
+}
+
+
+.popup-action {
+  background-color: var(--section-light);
+  border: 1px solid transparent;
+  padding: .375rem .9rem;
+  border-radius: 8px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popIn {
+  from { transform: translateY(12px) scale(.99); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}

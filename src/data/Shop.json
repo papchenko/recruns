@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Sticker (Red Edition)",
+        "description": "Branded Sticker by RecRun",
+        "size": "34 x 34 / 64 x 64",
+        "price": "90 UAH",
+        "rating": 5.0,
+        "image": "/sticker1.png"
+    },
+    {
+        "id": 2,
+        "title": "Sticker (90-x Edition)",
+        "description": "Branded Sticker by RecRun",
+        "size": "34 x 34 / 64 x 64",
+        "price": "90 UAH",
+        "rating": 5.0,
+        "image": "/sticker2-1.png"
+    },
+    {
+        "id": 3,
+        "title": "Sticker (White Edition)",
+        "description": "Branded Sticker by RecRun",
+        "size": "34 x 34 / 64 x 64",
+        "price": "90 UAH",
+        "rating": 4.5,
+        "image": "/sticker3.png"
+    },
+        {
+        "id": 4,
+        "title": "Sticker (Iron Edition)",
+        "description": "Branded Sticker by RecRun",
+        "size": "34 x 34 / 64 x 64",
+        "price": "90 UAH",
+        "rating": 4.1,
+        "image": "/sticker4.png"
+    }
+]

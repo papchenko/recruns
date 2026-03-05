@@ -1,0 +1,38 @@
+.version-wrapper {
+    padding: 200px 20px 20px 20px;
+    background: linear-gradient(180deg, #1c212f 0%, #12151e 100%);
+    display: flex;
+    justify-content:center;align-items: center;
+
+    @media (max-width: 600px) {
+    padding: 50px 15px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+    }
+  }
+}
+.version-content {
+  background-color: var(--section-light);
+  border-radius: 30px;
+  margin: 40px 0;
+  @media (max-width: 600px) {
+    margin: 0;
+  }
+}

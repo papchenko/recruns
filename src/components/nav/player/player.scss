@@ -1,0 +1,139 @@
+.mp-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.mp-popup {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 320px;
+  z-index: 1000;
+  user-select: none;
+}
+
+.mp-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #f44336;
+  }
+}
+
+.mp-title {
+  margin: 0 0 15px 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #111;
+  text-align: center;
+}
+
+.mp-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.mp-btn {
+  font-size: 22px;
+  padding: 8px 14px;
+  border: none;
+  background-color: #fd5200;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  
+  &:disabled {
+    background-color: #f44336a2;
+    cursor: not-allowed;
+  }
+  
+  &:not(:disabled):hover {
+    background-color: #fd5200;
+  }
+}
+
+.mp-progress-bar {
+  width: 100%;
+  background-color: #eee;
+  height: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.mp-progress {
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  transition: width 0.1s linear;
+}
+
+.mp-minimize-toggle {
+  margin-top: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  user-select: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.mp-minimized-bar {
+  position: fixed;
+  top: 220px;
+  padding-left: 44px;
+  color: #fff;
+  left: 0;
+  width: 12%;
+  height: 46px;
+  background-color: #12151eed;
+  border: 1px solid #ffffff96;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+  z-index: 1050;
+  
+  .mp-progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    transition: width 0.1s linear;
+  }
+  
+  .mp-minimized-title {
+    color: #fff;
+    margin-left: 26px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    padding-right: 20px;
+  }
+}

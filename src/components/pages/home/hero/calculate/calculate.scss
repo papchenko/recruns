@@ -1,0 +1,18 @@
+.calculate-input {
+    background-color: transparent;
+    &::placeholder {
+        color: #fff;
+    }
+}
+.calculate-description {
+    color: #ffffffbc;
+}
+.calculate-btn {
+    background-color: var(--first-color);
+    border: none;
+    transition: 0.3s;
+}
+.calculate-message {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}

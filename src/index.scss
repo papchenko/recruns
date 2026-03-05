@@ -1,0 +1,226 @@
+@media screen and (min-width: 1208px) {
+    .mp-minimized-bar {
+        margin-left: 30px;
+    }
+    .popup-content-share {
+          max-height: 60vh !important;
+          margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .lens__container{
+        padding: 0;
+    }
+    .team__container {
+    padding-top: 0 !important;
+    }
+    .section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+}
+
+@media screen and (max-width: 768px) {
+.section-bottom {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.mobile-section {
+    padding-right: 10px !important;
+    padding-bottom: 10px;
+}
+.mobile-top {
+    display: flex;
+}
+.sing-up-mobile {
+    font-size: 0.9rem;
+    padding: 0 8px;
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 5px !important;
+}
+.nav-bottom {
+    position: relative;
+    margin-top: 95px;
+    padding-inline: 20px;
+}
+.nav-input-box {
+    height: 40px !important;
+}
+.bi-list {
+    margin-right: -20px;
+}
+.nav-link {
+    font-size: 1.5rem;
+}
+.lang {
+    padding-right: 15px;
+}
+.call-mobile {
+    font-size: 2rem;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        }
+}
+.step__container {
+    padding-top: 0rem;
+}
+.hero-overlay {
+    padding: 0;
+    // top: 9%;
+    top: 4%;
+}
+.hero-description {
+    font-size: 17px;
+}
+.mp-minimized-bar {
+position: fixed;
+// top: 85px !important;
+top: 92px !important; //!
+color: #fff;
+left: 0;
+right: 0;
+// width: 100%;
+width: 54%; //!
+margin-left: 20px; //!
+background-color: #12151e;
+border: 1px solid #ffffff38;
+border-radius: 30px;
+cursor: pointer;
+user-select: none;
+overflow: hidden;
+z-index: 1050;
+}
+.calculate-title,
+.calculate-description {
+    text-align: center;
+    color: var( --desctiption-text);
+}
+.ri-record-circle-line {
+    font-size: 2rem !important;
+}
+.bi-person-circle {
+    font-size: 1.6rem !important;
+}
+.modal-header {
+    padding-top: 60px !important;
+}
+.main-wrapper {
+    padding: 5px 0 10px;
+}
+.main-wrapper-lens {
+    padding: 20px !important;
+    margin: 0 !important;
+}
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+}
+.stepslist-wrapper {
+  width: 100%;
+  padding-top: 10px;
+  padding-inline: 14px;
+  padding-bottom: 20px;
+}
+.calculator-bmi-wrapper {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.calculate-message {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn-center {
+    margin: 0 auto;
+}
+.about-top {
+  text-align: left;
+}
+.dds{
+    display: flex;
+    justify-content: end;
+    align-self: end;
+    justify-self: end;
+    align-content: end;
+    margin-left: 100px;
+}
+.search-results {
+  padding: 20px !important;
+}
+.search-loading {
+    padding: 20px !important;
+}
+.lensdetails-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px !important;
+}
+.lensdetails-card {
+  width: 360px;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  padding: 10px;
+}
+.chat-window {
+  max-width: 330px;
+}
+.section-about {
+    padding-top: 2rem !important;
+    padding-bottom: 2.5rem !important;
+}
+.friends-list {
+  width: 320px;
+}
+.version {
+    color: var(--first-color) !important;
+    opacity: 0.6;
+}
+.notifications-popup {
+    width: 300px !important;
+}
+.admin-announcement-panel {
+  background: rgba(30, 30, 40, 0.9);
+  padding: 20px 20px 20px 20px !important;
+}
+.popup-overlay-race {
+    top: 0;
+}
+.unread-badge {
+    position: absolute !important;
+    top: -5.5px !important;
+    right: -1.5px !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background: var(--first-color) !important;
+}
+.payment-container {
+  padding-top: 0px !important;
+}
+.payment-form {
+   width: 90% !important;
+}
+.calculator-bmi-wrapper {
+    padding-bottom: 35px;
+}
+}
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 460px) {
+}
+
