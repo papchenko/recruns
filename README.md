@@ -1,8 +1,5 @@
 # Recruns – Train Smart. Run Better.
 
-[![Website](https://img.shields.io/badge/Website-recruns.pro-orange)](https://recruns.pro)  
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
-
 ---
 
 ## 🚀 Overview
