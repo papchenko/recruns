@@ -1,16 +1,42 @@
-<<<<<<< HEAD
-# React + Vite
+# Recruns – Train Smart. Run Better.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Website](https://img.shields.io/badge/Website-recruns.pro-orange)](https://recruns.pro)  
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## Expanding the ESLint configuration
+**Recruns** is a modern platform for active people, designed to track workouts, analyze progress, and participate in team challenges. Whether you run, cycle, or swim, Recruns helps you monitor every activity with precision and stay motivated by connecting with a community of like-minded athletes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-RecRuns.pro - Record your run!
->>>>>>> f45483d (v 3.9.3 fix details)
+---
+
+## 🎯 Features
+
+- **Activity Tracking:** Log runs, cycling, and swimming sessions with detailed statistics.  
+- **Progress Analysis:** Visualize your performance over time with personalized stats.  
+- **Team Challenges:** Participate in tournaments with friends or colleagues. Collect points and climb the leaderboard.  
+- **Motivation & Rewards:** Earn badges for achievements and track personal milestones.  
+- **Community Engagement:** Share insights, strategies, and compete globally.
+
+---
+
+## 🛠 Technologies
+
+This project is built with modern frontend and backend tools:  
+
+- **Frontend:** JavaScript, React, Redux, Bootstrap, Vite  
+- **Backend & Services:** Firebase, REST APIs  
+- **Deployment:** GitHub Pages
+- **Other Tools:** ESLint, Prettier, Git, npm  
+
+This stack ensures a fast, scalable, and maintainable platform ready for production-level projects.
+
+---
+
+## 💻 Getting Started
+
+1. Clone the repository:  
+   ```bash
+   git clone git@github.com:papchenko/recruns.git
+   cd recruns
