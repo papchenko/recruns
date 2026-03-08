@@ -20,7 +20,7 @@ const News = () => {
   const [category, setCategory] = useState("");
   const [qrValue, setQrValue] = useState("");
 
-  const raceDate = "20.11.2025 (11:30 AM)";
+  const raceDate = "20.11.2026 (11:30 AM)";
   const maxParticipants = 40;
 
   const handleConfirmRegistration = async () => {

@@ -40,7 +40,7 @@ const Shop = () => {
         <div className="row text-center mb-5">
           <div className="section-title d-flex align-items-center flex-column">
             <p>Shop</p>
-            <h2>Our shop of branded things</h2>
+            <h2>Our shop of branded stickers</h2>
           </div>
         </div>
       </div>
