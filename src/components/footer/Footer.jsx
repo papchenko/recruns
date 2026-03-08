@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
             <p className="w-50 pt-2">This product is registered. Any use is for entertainment purposes only.</p>
             <div className="d-flex flex-wrap flex-column gap-1 mt-3">
-              <div className="copy-text">2025</div>
+              <div className="copy-text">© {new Date().getFullYear()}</div>
               <div className="copy-text">All right reserved</div>
             </div>
           </div>
