@@ -46,3 +46,40 @@
 .shop-card-body {
     margin-top: 3rem;
 }
+.shop-subtitle {
+    font-size: 1.3rem !important;
+}
+.shop-title {
+    font-size: 3.3rem !important;
+}
+
+.shop-navigation {
+  margin-top: 10px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+.shop-prev,
+.shop-next {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: var(--first-color);
+    // transform: scale(1.1);
+  }
+}
+.shop-container {
+  background: var(--bg-base);
+  position: relative;
+  z-index: 1;
+}

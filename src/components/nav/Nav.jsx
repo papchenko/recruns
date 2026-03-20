@@ -286,12 +286,12 @@ function Nav() {
                   <li className="nav-items position-relative">
                     <Link to="/Lens" className="nav-link" onClick={closeMenu}>Lens</Link>
                   </li>
-                  <li className="nav-items position-relative">
+                  {/* <li className="nav-items position-relative">
                     <Link to="/Race" className="nav-link" onClick={closeMenu}>Races</Link>
-                  </li>
-                  <li className="nav-items position-relative">
+                  </li> */}
+                  {/* <li className="nav-items position-relative">
                     <Link to="/Premium" className="nav-link" onClick={closeMenu}>Premium</Link>
-                  </li>
+                  </li> */}
                   <li className="nav-items position-relative">
                     <Link to="/Team" className="nav-link" onClick={closeMenu}>Our Team</Link>
                   </li>

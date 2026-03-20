@@ -20,8 +20,8 @@ const News = () => {
   const [category, setCategory] = useState("");
   const [qrValue, setQrValue] = useState("");
 
-  const raceDate = "20.11.2026 (11:30 AM)";
-  const maxParticipants = 40;
+  const raceDate = "not planned"; // date
+  const maxParticipants = 0; //40
 
   const handleConfirmRegistration = async () => {
     if (!user || !agreed || !category) return;
@@ -123,26 +123,28 @@ const News = () => {
                 <h5 className="first-color">Date</h5>
                 <h6 className="date-teamrun news-section_card-title">{raceDate}</h6>
                 <div className="d-flex justify-content-between news-section_meta small">
-                  <span>Student Park, Sumy</span>
+                  <span>not planned</span>
                   <span>Max: {maxParticipants} runners</span>
                 </div>
               </div>
 
               <div className="news-section_post mb-4">
                 <h5 className="first-color">Base</h5>
-                <h6 className="news-section_card-title"><span>Team 20 by 20 participants.</span></h6>
+                <h6 className="news-section_card-title"><span>Team none by none participants.</span></h6>
               </div>
 
               <div className="news-section_post mb-4">
                 <h5 className="first-color">Event Concept:</h5>
                 <p className='m-0'>
-                  The run is designed to test not only individual strength but also team spirit. Each participant contributes to the overall performance of their group. Categories include Men, Women, and Junior (16–20 years).
+                  {/* The run is designed to test not only individual strength but also team spirit. Each participant contributes to the overall performance of their group. Categories include Men, Women, and Junior (16–20 years). */}
+                  none
                 </p>
                 <h5 className="first-color pt-4">Main Rules:</h5>
-                <p className='m-0'>Minimum age: 16 years old</p>
+                {/* <p className='m-0'>Minimum age: 16 years old</p>
                 <p className='m-0'>Arrive at least 30 minutes before the start for check-in</p>
                 <p className='m-0'>Follow fair play and respect other participants</p>
-                <p className='m-0'>Use your personal QR code for entry and race validation</p>
+                <p className='m-0'>Use your personal QR code for entry and race validation</p> */}
+                none
               </div>
 
               <div className="registration-section">

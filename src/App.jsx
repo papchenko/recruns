@@ -51,6 +51,9 @@ import ProfilePage from './components/nav/search/ProfilePage';
 /*    Notifications    */
 import AdminAnnouncements from "./components/notification/AdminAnnouncements";
 
+/*    Fatcontrol    */
+import FatControl from './components/pages/fatcontrol/FatControl';
+
 import './App.scss';
 
 const App = () => {
@@ -66,7 +69,7 @@ const App = () => {
               element={
                 <main className="main">
                   <Hero />
-                  <About />
+                  {/* <About /> */}
                   <Shop />
                 </main>
               }
@@ -98,6 +101,9 @@ const App = () => {
 
             {/* Notifications */}
             <Route path="/admin-announcements" element={<AdminAnnouncements />} />
+
+            {/* Fatcontrol */}
+            <Route path="/fat-control" element={<FatControl />} />
           </Routes>
 
           <Footer />

@@ -1,122 +1,96 @@
 .hero-header {
-    position: relative;
-    height: 100vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    
-    &::before{
-        content:'';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(26, 43, 61, 0) 0%, rgb(6, 47, 42) 100%);
-        z-index: 0;
-    }
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  min-height: 600px;
+  margin-top: 120px;
+  overflow: hidden;
 }
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-.hero-overlay {
-    padding: 5rem 0 2.5rem;
-    position: absolute;
-    left: 0;
-    top: 25%;
-    width: 100%;
-    min-height: 100%;
-    z-index: 2;
-}
-.hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-.hero-description {
-    color: #ffffffbc;
-    max-width: 600px;
-    font-size: 20px;
-}
-.users {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid var(--white-color);
-        margin: -5px;
-        z-index: 1;
-    }
-    span {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid var(--white-color);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-left: -10px;
-        font-size: 0.90rem;
-        font-weight: 500;
-        z-index: 2;
-    }
-}
-.travel-info {
-    border-right: 1px solid rgba(248, 250, 252, 0.08) !important;
-}
-.travel-btn {
-    background-color: #f26f55 !important;
-    border: none;
-    cursor: pointer;
-}
-.travel-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    transform: translateY(40px);
-    select,
-    input {
-        box-shadow: none !important;
-        color: var(--primary-pera) !important;
-    }
+.hero-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 180px;
+
+  background: var(--section-transition);
+
+  z-index: 3;
+  pointer-events: none;
 }
 
-@media (max-width:1300px) {
-    .travel-box {
-        transform: translateY(10px);
-    }
+@media (max-width: 768px) {
+  .hero-header {
+    height: calc(100dvh - 100px);
+    margin-top: -90px;
+  }
 }
-@media (max-width:1199px) {
-    .hero-header {
-        min-height: auto !important;
-        height: 100vh !important;
-    }
-    .travel-info {
-        border: none !important;
-        align-items: center !important;
-    }
-    .travel-box {
-        transform: translateY(10px);
-        select,
-        input {
-            align-items: center;
-        }
-    }
+
+.hero-header .swiper {
+  width: 100%;
+  height: 100%;
 }
-.collapse .navbar-collapse.show {
-    transition: all 0.4s ease-in-out !important;
+
+.hero-header .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.85);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.3rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem !important;
+    max-width: 300px;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+}
+.hero-progress {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 7px;
+  height: 20%;
+  background: rgba(255,255,255,0.2);
+  z-index: 5;
+
+  .hero-progress-fill {
+    width: 100%;
+    height: 100%;
+    background: var(--first-color);
+    transform-origin: bottom center;
+    transform: scaleY(0);
+  }
 }

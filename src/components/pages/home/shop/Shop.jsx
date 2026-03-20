@@ -8,7 +8,8 @@ import { IoResize } from "react-icons/io5";
 
 /* Swiper */
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+import 'swiper/css/navigation';
 import 'swiper/css';
 
 import './shop.scss';
@@ -39,8 +40,8 @@ const Shop = () => {
       <div className="container">
         <div className="row text-center mb-5">
           <div className="section-title d-flex align-items-center flex-column">
-            <p>Shop</p>
-            <h2>Our shop of branded stickers</h2>
+            <p className='shop-subtitle'>Our Shop</p>
+            <h2 className='shop-title'>Branded stickers</h2>
           </div>
         </div>
       </div>
@@ -50,13 +51,12 @@ const Shop = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            modules={[Autoplay]}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true
-            }}
+            modules={[Autoplay, Navigation]}
             loop={true}
+            navigation={{
+              prevEl: '.shop-prev',
+              nextEl: '.shop-next',
+            }}
             breakpoints={{
               1399: { slidesPerView: 2 },
               991: { slidesPerView: 2 },
@@ -102,6 +102,10 @@ const Shop = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="shop-navigation">
+            <button className="shop-prev">←</button>
+            <button className="shop-next">→</button>
+          </div>
         </div>
       </div>
     </section>
