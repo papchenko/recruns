@@ -10,6 +10,7 @@ import {
   where,
 } from "firebase/firestore";
 import { MdOutlineNotifications } from "react-icons/md";
+import { FaRegBell } from "react-icons/fa6";
 import { useAuth } from "../account/AuthContext";
 
 import "./notifications.scss";
@@ -111,7 +112,8 @@ export default function NotificationsBell() {
   return (
     <div className="notifications-bell" ref={popupRef}>
       <div className="bell-icon" onClick={() => setShowPopup((prev) => !prev)}>
-        <MdOutlineNotifications className="text-white" />
+        {/* <MdOutlineNotifications className="text-white fs-1" /> */}
+       < FaRegBell />
         {unread.length > 0 && <span className="unread-badge"></span>}
       </div>
 

@@ -52,7 +52,7 @@ import ProfilePage from './components/nav/search/ProfilePage';
 import AdminAnnouncements from "./components/notification/AdminAnnouncements";
 
 /*    Fatcontrol    */
-import FatControl from './components/pages/fatcontrol/FatControl';
+import WeightDashboard from './components/weightcontrol/WeightDashboard';
 
 import './App.scss';
 
@@ -102,8 +102,8 @@ const App = () => {
             {/* Notifications */}
             <Route path="/admin-announcements" element={<AdminAnnouncements />} />
 
-            {/* Fatcontrol */}
-            <Route path="/fat-control" element={<FatControl />} />
+            {/* weightcontrol */}
+            <Route path="/weight-control" element={<WeightDashboard />} />
           </Routes>
 
           <Footer />

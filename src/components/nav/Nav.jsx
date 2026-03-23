@@ -22,6 +22,8 @@ import NotificationsBell from "../notification/NotificationsBell";
 import { MdWorkspacePremium } from "react-icons/md";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 
+import { FaBars } from "react-icons/fa";
+
 import './nav.scss';
 
 function Nav() {
@@ -156,8 +158,8 @@ function Nav() {
                   </a>
                     </>
                    )}
-                  <div className="divider gradient-divider"></div>
-                  <a className="cartpage-cart-link position-relative">
+                  {/* <div className="divider gradient-divider"></div> */}
+                  {/* <a className="cartpage-cart-link position-relative">
                     <i className="text-white fs-4" onClick={() => { setCurrentIndex(0); setIsPlayerOpen(true); }}><CgMusicNote /></i>
                     <MusicPlayerPopup
                       tracks={tracks}
@@ -166,7 +168,7 @@ function Nav() {
                       currentIndex={currentIndex}
                       setCurrentIndex={setCurrentIndex}
                     />
-                  </a>
+                  </a> */}
                   <a href="/cart" className="cartpage-cart-link position-relative">
                     <i className="bi bi-cart text-white fs-4"></i>
                     <span className="cart-count" style={{color: "#017b6e"}}>{cartCount}</span>
@@ -268,7 +270,8 @@ function Nav() {
                     onClick={toggleMenu}
                     aria-label='Toggle navigation'
                   >
-                    <span className="bi bi-list fs-1 text-white"></span>
+                    {/* <span className="bi bi-list fs-1 text-white"></span> */}
+                    <FaBars className='text-white fs-2' />
                   </button>
                 </div>
               </div>
@@ -322,11 +325,11 @@ function Nav() {
           </div>
         </div>
       </nav>
-      <div className="nav-bottom d-block d-lg-none">
-        <div className="mobile-bottom d-flex gap-3">
+      <div className="search-mobile nav-bottom d-block d-lg-none">
+        <div className="mobile-bottom d-flex gap-3 justify-content-between">
           <div className="col-lg-3">
             <div className="nav-input-box d-flex align-items-center justify-content-start gap-2">
-              <i className="bi bi-search fs-4"></i>
+              <i className="search-mobile bi bi-search fs-4"></i>
               <input
                 type="text"
                 className="form-control form-control-sm"
@@ -344,7 +347,7 @@ function Nav() {
               <i className="text-white fs-1"><NotificationsBell /></i>
             </div>
           )}
-            <a className="cartpage-cart-link position-relative">
+            {/* <a className="cartpage-cart-link position-relative">
               <i className="text-white fs-1" style={{ cursor: "pointer" }} onClick={() => { setCurrentIndex(0); setIsPlayerOpen(true); }}><CgMusicNote /></i>
               <MusicPlayerPopup
                 tracks={tracks}
@@ -353,8 +356,8 @@ function Nav() {
                 currentIndex={currentIndex}
                 setCurrentIndex={setCurrentIndex}
               />
-            </a>
-            <a href="/cart" className="cartpage-cart-link position-relative">
+            </a> */}
+            <a href="/cart" className="cart-mobile cartpage-cart-link position-relative">
               <i className="bi bi-bag text-white fs-1"></i>
               <span className="cart-count" style={{color: "#017b6e"}} >{cartCount}</span>
             </a>

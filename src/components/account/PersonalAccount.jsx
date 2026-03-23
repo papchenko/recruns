@@ -229,7 +229,9 @@ export default function PersonalAccount() {
             </div>
           ) : (
             <h2 className="username-display">
-              Welcome, <span>{user.username || user.email}</span>
+              Welcome, <span>  {(user.username || user.email)?.length > 12
+              ? (user.username || user.email).slice(0, 12) + ".."
+              : (user.username || user.email)}</span>
               {canChangeName && (
                 <FaPencilAlt
                   className="icon-edit"

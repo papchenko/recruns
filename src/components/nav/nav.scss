@@ -177,6 +177,11 @@
 }
 .notification-icon-mobile {
     padding-top: 0.5rem;
+    z-index: 10;
+}
+.search-mobile,
+.cart-mobile {
+    z-index: 10 !important;
 }
 .nav-premium-icon {
   position: absolute;

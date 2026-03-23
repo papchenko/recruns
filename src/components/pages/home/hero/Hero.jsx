@@ -91,7 +91,7 @@ const Hero = () => {
         <SwiperSlide>
           <div className="hero-slide" style={{ backgroundImage: `url('/path-to-your-image3.jpg')` }}>
             <div className="hero-content container">
-              <h1 className="hero-title">Fat Control</h1>
+              <h1 className="hero-title">Weight Control Pro</h1>
               <p className="hero-description">
                 Take control of your weight with daily tracking, smart insights, and detailed progress history.
               </p>
@@ -102,7 +102,7 @@ const Hero = () => {
                 className="btn btn-custome text-white rounded-5 px-5 py-2 fs-6 fw-semibold mt-2"
                 onClick={(e) => {
                   e.stopPropagation();
-                  handleProtectedNavigate('/fat-control');
+                  handleProtectedNavigate('/weight-control');
                 }}
               >
                 Track Progress

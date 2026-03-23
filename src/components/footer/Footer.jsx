@@ -27,9 +27,9 @@ const Footer = () => {
           <p><i></i>support@recruns.com</p>
         </div>
       </div>
-      <div className="container w-100 travel-box p-3 bg-dark text-white rounded z-0">
+      {/* <div className="footer-middel container w-100 p-3 bg-dark text-white rounded z-0">
         <BMICalculator />
-      </div>
+      </div> */}
       <div className="footer-middel mt-3 px-2 py-3 px-md-2 py-md-2">
         <div className="copy-text">© {new Date().getFullYear()} All right reserved</div>
       </div>

@@ -142,3 +142,14 @@ p {
     border: 1px solid #ffffff;
     padding: 2.2px;
 }
+.weight__container {
+    padding-top: 12rem;
+    padding-inline: 40px;
+}
+@media screen and (max-width: 768px) {
+    .weight__container {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+    padding-inline: 10px;
+}
+}
