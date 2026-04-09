@@ -172,6 +172,7 @@ export default function StepsList() {
             ({
               id,
               title,
+              notes,
               steps,
               photos = [],
               distance,
@@ -195,8 +196,15 @@ export default function StepsList() {
                   <h5 className="stepslist-title">
                     {title || "Untitled Run"}
                   </h5>
+                  <div className="stepslist-title">
+                  {notes && (
+                    <p className="stepslist-notes">
+                      {notes}
+                    </p>
+                  )}
+                  </div>
 
-                  <div className="stepslist-user">
+                  <div className="stepslist-user pt-2">
                      <div style={{ position: "relative", display: "inline-block" }}>
                     <img
                       src={avatarUrl}

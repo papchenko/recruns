@@ -24,10 +24,22 @@
 .stepslist-title {
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 15px;
-  background: linear-gradient(135deg, #db3206, #ff5a0b);
+  padding-top: 15px;
+  margin: 0;
+  // background: linear-gradient(135deg, #db3206, #ff5a0b);
+  background: linear-gradient(135deg, #ff5a0b);
   text-align: center;
   color: #fff;
+}
+.stepslist-notes {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-align: start;
+  color: #eae1e1 !important;
+  padding-bottom: 15px;
+  padding-inline: 10px;
 }
 
 .stepslist-swiper {
@@ -168,4 +180,11 @@
   &:active {
     box-shadow: 0 2px 6px rgba(219, 50, 6, 0.3);
   }
+}
+.stepslist-notes {
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 4px;
+  margin-inline: 10px;
+  line-height: 1.2;
 }

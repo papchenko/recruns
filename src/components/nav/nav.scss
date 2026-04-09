@@ -134,7 +134,7 @@
 }
  .record-btn {
     display: inline-block;
-    animation: recordPulse 3s ease-in-out infinite;
+    animation: recordPulse 4s ease-in-out infinite;
     transform-origin: center;
   }
 
@@ -144,8 +144,8 @@
       filter: brightness(1);
     }
     50% {
-      transform: scale(1.12);
-      filter: brightness(1.25);
+      transform: scale(1.07);
+      filter: brightness(1.07);
     }
     100% {
       transform: scale(1);

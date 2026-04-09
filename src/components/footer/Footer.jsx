@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="col-lg-3 col-md-6">
           <h5 className="mb-2">Contact</h5>
-          <p><i></i>support@recruns.com</p>
+          <p><i></i>support@recruns.pro</p>
         </div>
       </div>
       {/* <div className="footer-middel container w-100 p-3 bg-dark text-white rounded z-0">
