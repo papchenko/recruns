@@ -20,7 +20,7 @@ const Version = () => {
             <p className='fs-6 m-0'>3.9.3 Premium is now available for orders.</p>
             <p className='fs-6 m-0'>4.0.1 Fix bugs & Design changes.</p>
             <p className='fs-6 m-0'>5.0.5 Weight Control Pro v 1.0</p>
-            <p className='fs-6 m-0'>5.5.1 Completely updated interface Rec. New features added GPS Signal</p>
+            <p className='fs-6 m-0'>5.5.1 Completely updated interface Rec. New features added Notes, GPS Signal</p>
         </div>
     </div>
 </div>
