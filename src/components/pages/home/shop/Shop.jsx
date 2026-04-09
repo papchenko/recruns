@@ -36,7 +36,7 @@ const Shop = () => {
   };
 
   return (
-    <section className="shop-container pb-4" id='shop'>
+    <section className="shop-container pb-5" id='shop'>
       <div className="container">
         <div className="row text-center mb-5">
           <div className="section-title d-flex align-items-center flex-column">
