@@ -13,27 +13,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script type="module" crossorigin src="/assets/index-BuMT5FIp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CxbR7IJJ.css">
+    <script type="module" crossorigin src="/assets/index-gn8J6l5N.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BVhS1V1S.css">
   </head>
   <body>
     <div id="root"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('touchmove', function (event) {
-          if (event.scale !== 1) {
-            event.preventDefault();
-          }
-        }, { passive: false });
+  document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) {
+      event.preventDefault();
+    }
+  }, { passive: false });
 
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function (event) {
-          const now = new Date().getTime();
-          if (now - lastTouchEnd <= 300) {
-            event.preventDefault();
-          }
-          lastTouchEnd = now;
-        }, false);
-      </script>
+  let lastTouchEnd = 0;
+
+  document.addEventListener('touchend', function (event) {
+    const now = new Date().getTime();
+
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+
+    lastTouchEnd = now;
+  }, false);
+
+  document.addEventListener('contextmenu', function (event) {
+    event.preventDefault();
+  });
+
+  document.addEventListener('copy', function (event) {
+    event.preventDefault();
+  });
+
+  document.addEventListener('cut', function (event) {
+    event.preventDefault();
+  });
+
+  document.addEventListener('dragstart', function (event) {
+    event.preventDefault();
+  });
+</script>
   </body>
 </html>
